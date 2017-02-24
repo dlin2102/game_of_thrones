@@ -1,0 +1,13 @@
+<h1>Create Characters</h1>
+
+
+ <%= form_for [@house, @character] do |f| %>
+ <%= f.label :name %>
+ <%= f.text_file :name %>
+ <br/>
+ <br/>
+ <%=f.label :img_url%>
+ <%=f.file_field :img_url %>
+<br/>
+<%=f.submit %>
+<%end%>

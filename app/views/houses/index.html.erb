@@ -1,0 +1,8 @@
+<div class="house">
+<% @houses.each do |house| %>
+
+    <h2><%= link_to house.name, house %></h2>
+    <img src="<%= house.img_url %>"/>
+
+<% end %>
+</div>

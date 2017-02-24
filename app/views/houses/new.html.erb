@@ -1,0 +1,10 @@
+<h2><%="Establish a New House"%></h2>
+
+<%= form_for @house do |f|%>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+  <br/>
+  <br/>
+  <%= f.label :img_url %>
+  <%= f.file_field :img_url %>
+<% end %>

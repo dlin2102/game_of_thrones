@@ -9,6 +9,11 @@
   </head>
 
   <body>
+
+    <nav>
+    <h1>Game of Thrones!</h1>
+    <h2><%= link_to "View Houses", houses_path %> | <%= link_to "Create Your Own House", new_house_path %></h2>
+  </nav>
     <%= yield %>
-  </body>
+  </body
 </html>
