@@ -9,6 +9,6 @@
     <%= image_tag character.img_url %>
   </div>
 
-  
-
+  <%= link_to "Edit Character", edit_house_character_path(@house,character)%>
+  <%= link_to "Add Character", new_house_character_path(@house,character)%>
 <% end %>

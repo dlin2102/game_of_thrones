@@ -21,7 +21,10 @@
 body {
   font-family: "thrones",
   text-align: center;
-  background-color: #f4efcf;
+  /*background-color: #f4efcf;*/
+  background-image: url(https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTZjrBsEcJ7RcHNHYI_HUm57Jx3oIi5qMhkSeCboNfDtcdUMJ6e);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 nav {

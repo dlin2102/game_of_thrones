@@ -3,11 +3,12 @@
 
  <%= form_for [@house, @character] do |f| %>
  <%= f.label :name %>
- <%= f.text_file :name %>
+ <%= f.text_field :name %>
  <br/>
  <br/>
  <%=f.label :img_url%>
  <%=f.file_field :img_url %>
+<br/>
 <br/>
 <%=f.submit %>
 <%end%>
