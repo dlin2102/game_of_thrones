@@ -55,7 +55,8 @@ h2 {
 }
 
 .house img {
-  display: block;
+  display: inline-block;
+  
 }
 
 img {

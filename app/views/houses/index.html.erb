@@ -1,8 +1,10 @@
-<div class="house">
-<% @houses.each do |house| %>
 
+<% @houses.each do |house| %>
+<div class = "houses">
     <h2><%= link_to house.name, house %></h2>
     <img src="<%= house.img_url %>"/>
-
-<% end %>
+    <button><%= link_to "Create a New House", new_house_path(house)%> </button>
+    <button><%= link_to "Edit House", edit_house_path(house)%> </button>
+    <button><%= link_to "Tear it All Down", house_path(house), method: :destroy, data: {confirm:"There's children in here!!"}%> </button>
 </div>
+<% end %>
