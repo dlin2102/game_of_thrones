@@ -4,11 +4,17 @@
 
 <% @house.characters.each do |character| %>
 
-  <div class="character">
-    <h2><%= character.name %></h2>
+  <div class = "character">
+    <h2><%= link_to character.name, house_character_path(@house,character)%></h2>
     <%= image_tag character.img_url %>
+
+    <div class = "editbuttons">
+    <button><%= link_to "Makeover", edit_house_character_path(@house,character)%></button>
+    <br/>
+    <button><%= link_to "Add Character", new_house_character_path(@house,character)%></button>
+    <button><%= link_to "Destroy This Fool", [character.house,character], method: :delete, data: {confirm: 'But I want to livvvvvveeeee!!'}%></button>
   </div>
 
-  <%= link_to "Edit Character", edit_house_character_path(@house,character)%>
-  <%= link_to "Add Character", new_house_character_path(@house,character)%>
+  </div>
+
 <% end %>

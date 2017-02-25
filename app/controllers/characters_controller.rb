@@ -11,6 +11,11 @@ def create
   redirect_to house_path(@house)
 end
 
+def show
+  @house = House.find(params[:house_id])
+  @character = Character.find(params[:id])
+end
+
 def edit
   @house = House.find(params[:house_id])
   @character = Character.find(params[:id])
